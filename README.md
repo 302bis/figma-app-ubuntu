@@ -1,2 +1,2 @@
 # figma-app-ubuntu
-Ubuntu app of the Awesome Design Tool Called figma
+Ubuntu app of the Awesome Design Tool called Figma
