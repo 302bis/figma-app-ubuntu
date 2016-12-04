@@ -8,15 +8,15 @@ This package, its a web wrapper of the [Figma-web-app](https://figma.com). packe
 
 If you want to create your own build:
 ----------------
-git clone https://github.com/302bis/figma-app-ubuntu.git
-cd figma-app-ubuntu
-npm run release	
+git clone https://github.com/302bis/figma-app-ubuntu.git  
+cd figma-app-ubuntu   
+npm run release	  
 
 ## How to run directly
 
-git clone https://github.com/302bis/figma-app-ubuntu.git
-cd figma-app-ubuntu
-npm install
-npm start
+git clone https://github.com/302bis/figma-app-ubuntu.git  
+cd figma-app-ubuntu   
+npm install   
+npm start   
 
 
