@@ -1,0 +1,46 @@
+name: figma
+version: '0.1'
+summary: Turn Ideas into Products Faster
+description: Figma is the first interface design tool based in the browser, making it easier for teams to create software.
+
+confinement: strict
+grade: stable
+
+parts:
+  electron-app:
+    source: app/
+    plugin: nodejs
+
+    stage-packages:
+      - libnotify4
+      - libappindicator1
+      - libxtst6
+      - libnss3
+      - libxss1
+      - fontconfig-config
+      - gconf2
+      - libasound2
+      - pulseaudio
+
+    after:
+      - desktop-glib-only
+
+    build: node_modules/.bin/electron-builder
+    install: |
+      mkdir $SNAPCRAFT_PART_INSTALL/app
+      mv dist/linux-unpacked/* $SNAPCRAFT_PART_INSTALL/app
+    prime:
+      - -node_modules
+
+apps:
+  figma:
+    command: env TMPDIR=$XDG_RUNTIME_DIR desktop-launch $SNAP/app/castlearena
+    plugs:
+      - home
+      - x11
+      - unity7
+      - browser-support
+      - network
+      - gsettings
+      - pulseaudio
+      - opengl
