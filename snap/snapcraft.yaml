@@ -34,7 +34,7 @@ parts:
 
 apps:
   figma:
-    command: env TMPDIR=$XDG_RUNTIME_DIR desktop-launch $SNAP/app/castlearena
+    command: env TMPDIR=$XDG_RUNTIME_DIR desktop-launch $SNAP/app/figma
     plugs:
       - home
       - x11
