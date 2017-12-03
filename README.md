@@ -6,7 +6,7 @@ This package, its a web wrapper of the [Figma-web-app](https://figma.com) packed
 ## Install
 sudo snap install --edge figma 
 
-## [Download](https://github.com/302bis/figma-app-ubuntu/releases/download/0.0.3/figma_0.1_amd64.snap.zip)
+## [Download](https://github.com/302bis/figma-app-ubuntu/releases)
 
 
 
